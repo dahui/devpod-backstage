@@ -2,7 +2,7 @@
 
 [![Build and Push Image](https://github.com/dahui/devpod-backstage/actions/workflows/build.yaml/badge.svg)](https://github.com/dahui/devpod-backstage/actions/workflows/build.yaml)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-[![Docker Pulls](https://img.shields.io/docker/pulls/ghcr.io/dahui/devpod-backstage)](https://ghcr.io/dahui/devpod-backstage)
+
 
 A pre-configured DevPod container optimized for [Backstage](https://backstage.io/) development with Node.js 18 LTS and essential build tools.
 

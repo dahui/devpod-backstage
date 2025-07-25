@@ -2,7 +2,12 @@
 name: build-and-push-image
 
 on:
-  push:
+  push: 
+    branches:
+      - main
+    paths-ignore:
+      - '**/**.md'
+      - '**/**.yaml
 
 env:
   REGISTRY: ghcr.io

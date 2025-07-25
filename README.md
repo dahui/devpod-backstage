@@ -1,8 +1,8 @@
 # DevPod Backstage
 
-[![Build and Push Image](https://github.com/jeff/devpod-backstage/actions/workflows/build.yaml/badge.svg)](https://github.com/jeff/devpod-backstage/actions/workflows/build.yaml)
+[![Build and Push Image](https://github.com/dahui/devpod-backstage/actions/workflows/build.yaml/badge.svg)](https://github.com/dahui/devpod-backstage/actions/workflows/build.yaml)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-[![Docker Pulls](https://img.shields.io/docker/pulls/ghcr.io/jeff/devpod-backstage)](https://ghcr.io/jeff/devpod-backstage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/ghcr.io/dahui/devpod-backstage)](https://ghcr.io/dahui/devpod-backstage)
 
 A pre-configured DevPod container optimized for [Backstage](https://backstage.io/) development with Node.js 18 LTS and essential build tools.
 
@@ -19,13 +19,13 @@ A pre-configured DevPod container optimized for [Backstage](https://backstage.io
 ### Using with DevPod
 
 ```bash
-devpod up ghcr.io/jeff/devpod-backstage:latest
+devpod up ghcr.io/dahui/devpod-backstage:latest
 ```
 
 ### Using with Docker
 
 ```bash
-docker run -it --rm ghcr.io/jeff/devpod-backstage:latest
+docker run -it --rm ghcr.io/dahui/devpod-backstage:latest
 ```
 
 ### Creating a new Backstage app
@@ -52,15 +52,15 @@ yarn dev
 
 Images are automatically built and published to GitHub Container Registry:
 
-- **Latest**: `ghcr.io/jeff/devpod-backstage:latest`
-- **Tagged releases**: `ghcr.io/jeff/devpod-backstage:<tag>`
+- **Latest**: `ghcr.io/dahui/devpod-backstage:latest`
+- **Tagged releases**: `ghcr.io/dahui/devpod-backstage:<tag>`
 
 ## Development
 
 ### Building locally
 
 ```bash
-git clone https://github.com/jeff/devpod-backstage.git
+git clone https://github.com/dahui/devpod-backstage.git
 cd devpod-backstage
 docker build -t devpod-backstage .
 ```

@@ -15,6 +15,7 @@ RUN curl -k https://raw.githubusercontent.com/jhagadorn-mgm/zscaler-ca-installer
 # Install latest node lts and backstage dependencies.
 RUN apt-get update && \
     apt-get install -y make build-essential curl yarn python3 g++ && \
+    mkdir -p /usr/local/share/nvm && \
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash && \
     . "$NVM_DIR/nvm.sh" && \
     nvm install --lts && \

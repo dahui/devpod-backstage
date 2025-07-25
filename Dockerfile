@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:18
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 # Needed to ensure both amd64 and arm64 are built.
 # This arg is provided automaticlly by docker buildx.

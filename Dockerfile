@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:18
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
 
 # Needed to ensure both amd64 and arm64 are built.
 # This arg is provided automaticlly by docker buildx.
@@ -23,4 +23,10 @@ RUN apt-get update && \
     corepack enable && \
     yarn set version 4.4.1 && \
     echo 'NVM_DIR="/usr/local/share/nvm"' >> /etc/environment
+
+RUN echo >> /home/vscode/.bashrc && \
+    echo 'export NVM_DIR="/usr/local/share/nvm"' >> /home/vscode/.bashrc && \
+    echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> /home/vscode/.bashrc && \ 
+    echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion' >> /home/vscode/.bashrc
+
 

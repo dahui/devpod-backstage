@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/base:ubuntu
+FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:18
 
 # Needed to ensure both amd64 and arm64 are built.
 # This arg is provided automaticlly by docker buildx.
@@ -21,5 +21,6 @@ RUN apt-get update && \
     nvm install --lts && \
     nvm use --lts && \
     corepack enable && \
-    yarn set version 4.4.1 
+    yarn set version 4.4.1 && \
+    echo 'NVM_DIR="/usr/local/share/nvm"' >> /etc/environment
 
